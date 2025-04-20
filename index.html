@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS for layout and styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom styles -->
+   <!-- Add this to your <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main container centered with spacing -->
+  <div class="container text-center mt-5">
+    <!-- Game title -->
+    <h1 class="mb-3">Tic Tac Toe</h1>
+
+    <!-- Turn indicator updates dynamically based on current player -->
+    <h4 id="turn-indicator" class="mb-4">Player X's turn</h4>
+
+    <!-- Scoreboard section showing score for Player X, Player O, and Draws -->
+    <div class="row justify-content-center mb-3">
+      
+      <!-- Player X score card -->
+      <div class="col-4 col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5>Player X</h5>
+            <p id="score-x" class="display-6">0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player O score card -->
+      <div class="col-4 col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5>Player O</h5>
+            <p id="score-o" class="display-6">0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Draws score card -->
+      <div class="col-4 col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5>Draws</h5>
+            <p id="score-draw" class="display-6">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap alert container (dynamic) for game result messages -->
+    <div id="alert-container"></div>
+
+    <!-- 3x3 Game grid for Tic Tac Toe -->
+    <div id="game">
+      <!-- Each cell is a clickable div; text content will be X or O -->
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+
+    <!-- Button to restart game (clears the board but not the scoreboard) -->
+    <button id="reset" class="btn btn-warning mt-4">Restart Game</button>
+  </div>
+
+  <!-- jQuery for easier DOM handling -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

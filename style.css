@@ -1,0 +1,71 @@
+/* Set background color for the whole page */
+body {
+  background-color: #79e2e6; 
+}
+
+h1, h4, h5 {
+  font-family: 'Bungee Spice', sans-serif;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+/* Game board container is a grid of 3 columns and 3 rows */
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* 3 equal columns */
+  grid-template-rows: repeat(3, 100px);    /* 3 equal rows */
+  gap: 5px;                                 /* Space between cells */
+  justify-content: center;                  /* Center the grid horizontally */
+  margin: 20px auto;                        /* Margin to center the board */
+}
+
+/* Each individual cell of the grid */
+.cell {
+  width: 100px;               /* Fixed width */
+  height: 100px;              /* Fixed height */
+  background-color: rgb(209, 124, 54);    /* Cell background */
+  border: 2px solid #333;     /* Cell border */
+  font-family: 'Press Start 2P', monospace; /* Cool game-like fonts for X and O */
+  font-size: 2rem;
+  font-weight: normal;
+  color: #e8f7f7;
+  display: flex;              /* Use flexbox to center content */
+  justify-content: center;    /* Center text horizontally */
+  align-items: center;        /* Center text vertically */
+  cursor: pointer;            /* Pointer cursor changes to indicate clickable */
+  user-select: none;          /* Prevent accidental text selection */
+}
+
+/* Color change when hovering over a cell */
+.cell:hover {
+  background-color: #045b5e; 
+}
+
+/* Alert styling */
+.alert-success {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  padding: 1.2rem;
+  border: 2px solid #444;
+  background-color: #77c98b;
+  color: rgb(209, 124, 54); 
+  text-align: center;
+}
+
+.alert-warning {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  padding: 1.2rem;
+  border: 2px solid #444;
+  background-color: #e22737; 
+  color: #f7f5f1; 
+  text-align: center;
+}
