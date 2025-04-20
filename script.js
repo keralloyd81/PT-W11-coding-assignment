@@ -1,3 +1,5 @@
+//Tic-Tac-Toe Game
+
 $(function () {
   // Keeps track of the current player (either 'X' or 'O')
   let currentPlayer = 'X';

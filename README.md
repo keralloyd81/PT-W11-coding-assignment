@@ -20,7 +20,7 @@ A heading should say whether it is X's or O's turn and change with each move mad
 A button should be available to clear the grid and restart the game.
 When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.
 
-Video Steps:
+gitVideo Steps:
 Create a video, up to five minutes max, showing and explaining how your project works with an emphasis on the portions you contributed.
 This video should be done using screen share and voice over.
 This can easily be done using Zoom, although you don't have to use Zoom, it's just what we recommend.
